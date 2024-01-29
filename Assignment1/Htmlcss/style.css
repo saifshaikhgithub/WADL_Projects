@@ -1,0 +1,277 @@
+
+/* base rule */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Urbanist', sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6
+{
+    font-weight: 300;
+}
+
+li,a,label,p
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--white);
+
+}
+
+li
+{
+    list-style: none;
+}
+
+/* Themes */
+:root
+{
+    --mycolor1:#687EFF;
+    --mycolor2:#80B3FF;
+    --mycolor3:#98E4FF;
+    --mycolor4:#B6FFFA;
+    --white:hsl(0,0%,94%);
+    --black:#0F0F0F;
+
+}
+
+
+/* Layout */
+
+.container
+{
+    max-width:128rem;
+    margin: 0 auto;
+    padding: 9.6rem 2.4rem;
+    font-weight: 400;
+}
+
+.grid{
+    display: grid;
+    gap: 2.4rem;
+
+}
+
+.grid-four--cols{
+
+    /* grid-template-columns: repeat(4,1fr); */
+    grid-template-columns: repeat(auto-fill,minmax(120px,1fr));
+}
+
+
+
+
+
+/* reusable  */
+
+.section-title
+{
+    padding: 3.2rem 2.4rem;
+
+    & h2
+    {
+        font-size: 3.8rem;
+        font-weight: 600;
+        letter-spacing: .18rem;
+        text-transform: uppercase;
+        text-align: center;
+        
+    }
+}
+ 
+
+/* Navbar */
+
+header{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color:var(--white);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+header .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 3.2rem 2.4rem;
+   
+
+    & img
+    {
+        width: 25%;
+        height: auto;
+    }
+
+    & .navbar .nav-list{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            gap: 2.4rem;
+
+            & li{
+                list-style: none;
+
+                & a
+                {
+                    font-size: 1.7rem;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: var(--black);
+                }
+            }
+
+            
+    }
+}
+/*  Hero section */
+ 
+.Hero-section
+{
+    background-color: var(--mycolor3);
+    margin-top: 16rem; 
+    & .container
+    {
+        width: 100vw;
+
+    }
+}
+
+
+/* categories section */
+
+
+.categories .grid{
+    gap: 20rem;
+}
+
+
+
+.categories .category-card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 20rem;
+    height: 20rem; */
+    
+
+    & img{
+        width: 100%;
+        height: auto;      
+    }
+
+    & .category-text h3
+    {
+        font-size:1.8rem;
+    }
+}
+
+.Best-deals .grid
+{
+    gap: 20rem;
+}
+
+.Best-deals .Deals-card
+{
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & img{
+        width:100% ;
+        height: auto;      
+    }
+    & .Deals-text h3
+    {
+        font-size:1.5rem;
+    }
+
+}
+
+
+footer
+{
+    background-color: var(--mycolor1);
+
+    & .grid
+    {
+        gap: 15rem;
+    }
+
+    & .footer-div--inside 
+    {
+        & h3
+        {
+            font-size:1.5rem;
+        }
+       
+
+        & p
+        {
+            text-align: justify;
+            padding-top: 1.2rem;
+        }
+
+        & ul
+        {
+            padding-top: 1.2rem;
+
+            & li{
+                line-height: 2.4rem;
+            }
+        }
+    }
+
+
+    & .footerdiv2 
+    {
+        padding-top: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .social-icons
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            & .fa-brands
+            {
+                font-size: 2.4rem;
+            }
+        }
+    }
+    
+}
+
+
+/* media queries
+
+@media (width <= 992px) {
+
+    .categories .grid-four--cols{
+        grid-template-columns: repeat(3,1fr);
+    }
+} */
+
+
+
+

@@ -1,0 +1,162 @@
+
+/* base rule */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+html
+{
+    font-size: 62.5%;
+
+}
+
+/* Themes */
+:root
+{
+    --mycolor1:#687EFF;
+    --mycolor2:#80B3FF;
+    --mycolor3:#98E4FF;
+    --mycolor4:#B6FFFA;
+    --white:hsl(0%,0,94%);
+    --black:#0F0F0F;
+
+}
+
+
+/* Layout */
+
+.container
+{
+    max-width:128rem;
+    margin: 0 auto;
+    padding: 9.6rem 2.4rem;
+    font-weight: 400;
+}
+
+
+
+/* reusable  */
+ 
+
+
+
+
+
+
+
+
+
+
+
+.header
+{
+    width: 100%;
+    min-height: 100vh;
+    /* background-image:url(Images/Headerimage.jpg); */
+    
+    /* background-image: linear-gradient(rgba(19, 28, 65, 0.7),rgba(4,9,30,0.7)),url(Images/Shopezheaderimage.jpg); */
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:row;
+    padding: 2% 6%;
+    justify-content:space-between;
+   
+    /* align-items: center; */
+ 
+    
+    
+}
+.logo
+{
+    width: 6%;
+    /* align-content: center; */
+    margin-right: 10%;
+    
+}
+
+.nav-links
+{
+    text-align: right;
+    align-items: center;
+    /* align-content: center; */
+    align-self:center;
+    width: 50%;
+
+    
+
+}
+
+.nav-links ul li
+{
+    list-style: none;
+    display:inline-block ;
+    padding: 6px 12px;
+    position: relative;
+}
+
+.headermessage
+{
+    display: flex;
+    flex-direction: column;
+    color: rgb(130, 144, 209);
+    width: 100%;
+    text-align: center;
+    /* margin-left: 30rem;
+    margin-right: 30rem; */
+    margin-top: 15rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    
+
+}
+
+.headermessage h4
+{
+    align-content: center;
+    font-family:sans-serif;
+    width: 60%;
+    color: var(--mycolor1);
+
+}
+
+.headermessage button
+{
+    background-color: rgb(42, 101, 228);
+    padding: 0.5rem .8rem;
+    & a
+    {
+        color: white;
+        font-size: 1.6rem;
+        font-family: sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.16rem;
+    }
+}
+
+.categories
+{
+    margin-top: 5vh;
+    display: flex;
+    align-self: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    /* min-height: 50rem; */
+}
+
+.categories img
+{
+    width: 20vh;
+    height: 20vh;
+    border-radius: 30%;
+}

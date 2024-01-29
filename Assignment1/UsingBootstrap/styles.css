@@ -1,0 +1,23 @@
+.changingimages
+{
+    width: 100%;
+    max-height:auto;
+
+    & img
+    {
+        width: 200px;
+        /* height: 200px; */
+        aspect-ratio: 3;
+    }
+}
+
+.categories
+{
+    margin-top: 10rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}

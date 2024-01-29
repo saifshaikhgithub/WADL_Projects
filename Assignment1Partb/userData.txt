@@ -1,0 +1,4 @@
+{"username":"Pratham","email":"pratham123@gmail.com","password":"pratham123"}
+{"username":"Ram","email":"ram123@gmail.com","password":"ram123"}
+{"username":"om","email":"om123@gmail.com","password":"om123"}
+{"username":"prathamesh","email":"prathameshshriramwar@gmail.com","password":"abcd123"}
